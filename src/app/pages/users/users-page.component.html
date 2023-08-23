@@ -1,0 +1,13 @@
+<div class="container col-7 justify-content-center">
+  <ul>
+    <li
+      class="mb-2"
+      *ngFor="let user of usersList; trackBy: trackByFn"
+      (click)="navigateTo('user-details', user.login)"
+    >
+      <h2>{{ user.id }}</h2>
+
+      <h3>{{ user.login }}</h3>
+    </li>
+  </ul>
+</div>
