@@ -1,0 +1,1242 @@
+{
+  "files": {
+    "src/app/pages/user-details/user-details-page.component.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "0",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "src/app/pages/user-details/user-details-page.component.ts(18,7): error TS2378: A 'get' accessor must return a value.\nsrc/app/pages/user-details/user-details-page.component.ts(18,21): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 20
+            },
+            "start": {
+              "column": 29,
+              "line": 18
+            }
+          }
+        },
+        {
+          "id": "1",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 3,
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 39,
+              "line": 19
+            },
+            "start": {
+              "column": 12,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "4",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "this.user",
+          "statusReason": "src/app/pages/user-details/user-details-page.component.ts(19,5): error TS2322: Type 'boolean | null' is not assignable to type 'boolean'.\n  Type 'null' is not assignable to type 'boolean'.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 22,
+              "line": 19
+            },
+            "start": {
+              "column": 12,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "2",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 3,
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 39,
+              "line": 19
+            },
+            "start": {
+              "column": 12,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "3",
+          "mutatorName": "LogicalOperator",
+          "replacement": "!this.user || !this.loading",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 3,
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 39,
+              "line": 19
+            },
+            "start": {
+              "column": 12,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "5",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "this.loading",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 2,
+          "coveredBy": [
+            "6",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 39,
+              "line": 19
+            },
+            "start": {
+              "column": 26,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "6",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "true",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 4,
+          "coveredBy": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 27,
+              "line": 22
+            },
+            "start": {
+              "column": 22,
+              "line": 22
+            }
+          }
+        },
+        {
+          "id": "7",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected spy getUserById to have been called with:\n  [ 'no_exist' ]\nbut it was never called.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:75:24)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 39
+            },
+            "start": {
+              "column": 20,
+              "line": 36
+            }
+          }
+        },
+        {
+          "id": "22",
+          "mutatorName": "OptionalChaining",
+          "replacement": "this.subscription.unsubscribe",
+          "statusReason": "src/app/pages/user-details/user-details-page.component.ts(54,5): error TS2531: Object is possibly 'null'.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 35,
+              "line": 54
+            },
+            "start": {
+              "column": 5,
+              "line": 54
+            }
+          }
+        },
+        {
+          "id": "8",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "Expected spy getUserById to have been called with:\n  [ 'no_exist' ]\nbut it was never called.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:75:24)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 53,
+              "line": 37
+            },
+            "start": {
+              "column": 49,
+              "line": 37
+            }
+          }
+        },
+        {
+          "id": "9",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected spy getUserById to have been called with:\n  [ 'no_exist' ]\nbut it was never called.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:75:24)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 51
+            },
+            "start": {
+              "column": 43,
+              "line": 41
+            }
+          }
+        },
+        {
+          "id": "10",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "TypeError: Cannot read properties of undefined (reading 'subscribe')\n    at UserDetailsPageComponent.getUserWithId (src/app/pages/user-details/user-details-page.component.ts:100:59)\n    at UserDetailsPageComponent.ngOnInit (src/app/pages/user-details/user-details-page.component.ts:86:12)\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:106:15)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 3,
+          "killedBy": [
+            "8"
+          ],
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 11,
+              "line": 42
+            },
+            "start": {
+              "column": 9,
+              "line": 42
+            }
+          }
+        },
+        {
+          "id": "11",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "Expected spy getUserById to have been called with:\n  [ 'no_exist' ]\nbut it was never called.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:75:24)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 11,
+              "line": 42
+            },
+            "start": {
+              "column": 9,
+              "line": 42
+            }
+          }
+        },
+        {
+          "id": "12",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected spy getUserById to have been called with:\n  [ 'no_exist' ]\nbut it was never called.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:75:24)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 6,
+              "line": 50
+            },
+            "start": {
+              "column": 13,
+              "line": 42
+            }
+          }
+        },
+        {
+          "id": "13",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "false",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 2,
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 26,
+              "line": 43
+            },
+            "start": {
+              "column": 22,
+              "line": 43
+            }
+          }
+        },
+        {
+          "id": "14",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected null to equal Object({ login: 'usuario1', id: '1', name: 'Nombre Usuario' }).\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:91:28)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 8,
+              "line": 49
+            },
+            "start": {
+              "column": 76,
+              "line": 44
+            }
+          }
+        },
+        {
+          "id": "15",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "true",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 2,
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 29,
+              "line": 45
+            },
+            "start": {
+              "column": 24,
+              "line": 45
+            }
+          }
+        },
+        {
+          "id": "16",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "Expected Object({ login: '', name: '', id: '' }) to equal null.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:72:28)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 30,
+              "line": 46
+            },
+            "start": {
+              "column": 13,
+              "line": 46
+            }
+          }
+        },
+        {
+          "id": "17",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "false",
+          "statusReason": "Expected null to equal Object({ login: 'usuario1', id: '1', name: 'Nombre Usuario' }).\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:91:28)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 30,
+              "line": 46
+            },
+            "start": {
+              "column": 13,
+              "line": 46
+            }
+          }
+        },
+        {
+          "id": "18",
+          "mutatorName": "EqualityOperator",
+          "replacement": "resp.login === ''",
+          "statusReason": "Expected Object({ login: '', name: '', id: '' }) to equal null.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:72:28)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 30,
+              "line": 46
+            },
+            "start": {
+              "column": 13,
+              "line": 46
+            }
+          }
+        },
+        {
+          "id": "19",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"Stryker was here!\"",
+          "statusReason": "Expected Object({ login: '', name: '', id: '' }) to equal null.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:72:28)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "6"
+          ],
+          "coveredBy": [
+            "6",
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 30,
+              "line": 46
+            },
+            "start": {
+              "column": 28,
+              "line": 46
+            }
+          }
+        },
+        {
+          "id": "20",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected null to equal Object({ login: 'usuario1', id: '1', name: 'Nombre Usuario' }).\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/user-details/user-details-page.component.spec.ts:91:28)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "7"
+          ],
+          "location": {
+            "end": {
+              "column": 10,
+              "line": 48
+            },
+            "start": {
+              "column": 32,
+              "line": 46
+            }
+          }
+        },
+        {
+          "id": "21",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 4,
+          "coveredBy": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 55
+            },
+            "start": {
+              "column": 23,
+              "line": 53
+            }
+          }
+        }
+      ],
+      "source": "import { Component, OnDestroy, OnInit } from '@angular/core';\r\nimport { ActivatedRoute } from '@angular/router';\r\nimport { Subscription } from 'rxjs';\r\n\r\nimport { UserInterface } from '../../interfaces/user.interface';\r\nimport { UsersService } from '../../services/users.service';\r\n\r\n/**\r\n * UserDetailsPageComponent\r\n */\r\n@Component({\r\n  selector: 'app-user-details',\r\n  templateUrl: './user-details-page.component.html',\r\n})\r\nexport class UserDetailsPageComponent implements OnInit, OnDestroy {\r\n  user: UserInterface | null = null;\r\n\r\n  get isNotFound(): boolean {\r\n    return !this.user && !this.loading;\r\n  }\r\n\r\n  loading: boolean = false;\r\n\r\n  subscription: Subscription | null = null;\r\n  /**\r\n   * Class constructor\r\n   *\r\n   * @param {ActivatedRoute} activeRoute the active route\r\n   * @param {UsersService} service the user service\r\n   */\r\n  constructor(\r\n    private activeRoute: ActivatedRoute,\r\n    private service: UsersService\r\n  ) {}\r\n\r\n  ngOnInit(): void {\r\n    const id = this.activeRoute.snapshot.params['id'];\r\n    this.getUserWithId(id);\r\n  }\r\n\r\n  private getUserWithId(id: string): void {\r\n    if (id) {\r\n      this.loading = true;\r\n      this.subscription = this.service.getUserById(id).subscribe((resp) => {\r\n        this.loading = false;\r\n        if (resp.login !== '') {\r\n          this.user = resp;\r\n        }\r\n      });\r\n    }\r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n    this.subscription?.unsubscribe();\r\n  }\r\n}\r\n"
+    },
+    "src/app/pages/users/users-page.component.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "23",
+          "mutatorName": "ArrayDeclaration",
+          "replacement": "[\"Stryker was here\"]",
+          "statusReason": "src/app/pages/users/users-page.component.ts(19,33): error TS2322: Type 'string' is not assignable to type 'UserInterface'.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 34,
+              "line": 19
+            },
+            "start": {
+              "column": 32,
+              "line": 19
+            }
+          }
+        },
+        {
+          "id": "24",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected $.length = 0 to equal 2.\nExpected $[0] = undefined to equal Object({ login: 'usuario1', id: '1', name: 'Nombre usuario 1' }).\nExpected $[1] = undefined to equal Object({ login: 'usuario2', id: '2', name: 'Nombre usuario 2' }).\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/users/users-page.component.spec.ts:108:33)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "11",
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 41
+            },
+            "start": {
+              "column": 20,
+              "line": 34
+            }
+          }
+        },
+        {
+          "id": "29",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "src/app/pages/users/users-page.component.ts(47,51): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "10",
+            "11"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 49
+            },
+            "start": {
+              "column": 58,
+              "line": 47
+            }
+          }
+        },
+        {
+          "id": "25",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected $.length = 0 to equal 2.\nExpected $[0] = undefined to equal Object({ login: 'usuario1', id: '1', name: 'Nombre usuario 1' }).\nExpected $[1] = undefined to equal Object({ login: 'usuario2', id: '2', name: 'Nombre usuario 2' }).\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/users/users-page.component.spec.ts:108:33)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "11",
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 8,
+              "line": 40
+            },
+            "start": {
+              "column": 29,
+              "line": 38
+            }
+          }
+        },
+        {
+          "id": "31",
+          "mutatorName": "OptionalChaining",
+          "replacement": "this.subscription.unsubscribe",
+          "statusReason": "src/app/pages/users/users-page.component.ts(52,5): error TS2533: Object is possibly 'null' or 'undefined'.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 35,
+              "line": 52
+            },
+            "start": {
+              "column": 5,
+              "line": 52
+            }
+          }
+        },
+        {
+          "id": "26",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Expected spy navigate to have been called with:\n  [ [ 'user-details/loginName' ] ]\nbut it was never called.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/users/users-page.component.spec.ts:103:23)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 45
+            },
+            "start": {
+              "column": 39,
+              "line": 43
+            }
+          }
+        },
+        {
+          "id": "27",
+          "mutatorName": "ArrayDeclaration",
+          "replacement": "[]",
+          "statusReason": "Expected spy navigate to have been called with:\n  [ [ 'user-details/loginName' ] ]\nbut actual calls were:\n  [ [  ] ].\n\nCall 0:\n  Expected $[0].length = 0 to equal 1.\n  Expected $[0][0] = undefined to equal 'user-details/loginName'.\nError: Expected spy navigate to have been called with:\n  [ [ 'user-details/loginName' ] ]\nbut actual calls were:\n  [ [  ] ].\nCall 0:\n  Expected $[0].length = 0 to equal 1.\n  Expected $[0][0] = undefined to equal 'user-details/loginName'.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/users/users-page.component.spec.ts:103:23)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11"
+          ],
+          "location": {
+            "end": {
+              "column": 42,
+              "line": 44
+            },
+            "start": {
+              "column": 26,
+              "line": 44
+            }
+          }
+        },
+        {
+          "id": "28",
+          "mutatorName": "StringLiteral",
+          "replacement": "``",
+          "statusReason": "Expected spy navigate to have been called with:\n  [ [ 'user-details/loginName' ] ]\nbut actual calls were:\n  [ [ '' ] ].\n\nCall 0:\n  Expected $[0][0] = '' to equal 'user-details/loginName'.\nError: Expected spy navigate to have been called with:\n  [ [ 'user-details/loginName' ] ]\nbut actual calls were:\n  [ [ '' ] ].\nCall 0:\n  Expected $[0][0] = '' to equal 'user-details/loginName'.\n    at <Jasmine>\n    at UserContext.apply (src/app/pages/users/users-page.component.spec.ts:103:23)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "11"
+          ],
+          "coveredBy": [
+            "11"
+          ],
+          "location": {
+            "end": {
+              "column": 41,
+              "line": 44
+            },
+            "start": {
+              "column": 27,
+              "line": 44
+            }
+          }
+        },
+        {
+          "id": "30",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "status": "Survived",
+          "static": false,
+          "testsCompleted": 4,
+          "coveredBy": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 53
+            },
+            "start": {
+              "column": 23,
+              "line": 51
+            }
+          }
+        }
+      ],
+      "source": "import { Component, OnDestroy, OnInit } from '@angular/core';\r\nimport { Router } from '@angular/router';\r\nimport { Subscription, take } from 'rxjs';\r\n\r\nimport { UserInterface } from '../../interfaces/user.interface';\r\nimport { UsersService } from '../../services/users.service';\r\n\r\n/**\r\n * UsersPageComponent\r\n */\r\n@Component({\r\n  selector: 'app-users',\r\n  templateUrl: './users-page.component.html',\r\n})\r\nexport class UsersPageComponent implements OnInit, OnDestroy {\r\n  /**\r\n   * Users list\r\n   */\r\n  usersList: UserInterface[] = [];\r\n\r\n  /**\r\n   * Subscrition reference\r\n   */\r\n  private subscription: Subscription | undefined | null;\r\n\r\n  /**\r\n   * Class constructor\r\n   *\r\n   * @param {Router} router the routing service\r\n   * @param {UsersService} service the users service\r\n   */\r\n  constructor(private router: Router, private service: UsersService) {}\r\n\r\n  ngOnInit(): void {\r\n    this.subscription = this.service\r\n      .getUsers()\r\n      .pipe(take(1))\r\n      .subscribe((users) => {\r\n        this.usersList = users;\r\n      });\r\n  }\r\n\r\n  navigateTo(url: string, id: string) {\r\n    this.router.navigate([`${url}/${id}`]);\r\n  }\r\n\r\n  trackByFn(_index: number, item: UserInterface): string {\r\n    return item.login;\r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n    this.subscription?.unsubscribe();\r\n  }\r\n}\r\n"
+    },
+    "src/app/services/users.service.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "33",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "src/app/services/users.service.ts(15,11): error TS2739: Type '{}' is missing the following properties from type 'UserInterface': login, id, name\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 69,
+              "line": 15
+            },
+            "start": {
+              "column": 38,
+              "line": 15
+            }
+          }
+        },
+        {
+          "id": "37",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "src/app/services/users.service.ts(24,15): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "2"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 27
+            },
+            "start": {
+              "column": 43,
+              "line": 24
+            }
+          }
+        },
+        {
+          "id": "39",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "src/app/services/users.service.ts(29,28): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 34
+            },
+            "start": {
+              "column": 54,
+              "line": 29
+            }
+          }
+        },
+        {
+          "id": "41",
+          "mutatorName": "ArrowFunction",
+          "replacement": "() => undefined",
+          "statusReason": "src/app/services/users.service.ts(33,30): error TS2322: Type 'undefined' is not assignable to type 'ObservableInput<any>'.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 48,
+              "line": 33
+            },
+            "start": {
+              "column": 24,
+              "line": 33
+            }
+          }
+        },
+        {
+          "id": "32",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "Error: Expected one matching request for criteria \"Match URL: https://api.github.com/users\", found none. Requests received are: GET /users.\n    at HttpClientTestingBackend.expectOne (node_modules/@angular/common/fesm2022/http/testing.mjs:267:19)\n    at UserContext.apply (src/app/services/users.service.spec.ts:54:26)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>, Error: Expected no open requests, found 1: GET /users\n    at HttpClientTestingBackend.verify (node_modules/@angular/common/fesm2022/http/testing.mjs:295:19)\n    at UserContext.apply (src/app/services/users.service.spec.ts:40:14)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 53,
+              "line": 14
+            },
+            "start": {
+              "column": 29,
+              "line": 14
+            }
+          }
+        },
+        {
+          "id": "34",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"Stryker was here!\"",
+          "statusReason": "Expected $.login = 'Stryker was here!' to equal ''.\n    at <Jasmine>\n    at Object.next (src/app/services/users.service.spec.ts:81:20)\n    at ConsumerObserver.next (node_modules/rxjs/dist/esm/internal/Subscriber.js:91:33)\n    at SafeSubscriber._next (node_modules/rxjs/dist/esm/internal/Subscriber.js:60:26)\n    at SafeSubscriber.next (node_modules/rxjs/dist/esm/internal/Subscriber.js:31:18)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 49,
+              "line": 15
+            },
+            "start": {
+              "column": 47,
+              "line": 15
+            }
+          }
+        },
+        {
+          "id": "35",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"Stryker was here!\"",
+          "statusReason": "Expected $.id = 'Stryker was here!' to equal ''.\n    at <Jasmine>\n    at Object.next (src/app/services/users.service.spec.ts:81:20)\n    at ConsumerObserver.next (node_modules/rxjs/dist/esm/internal/Subscriber.js:91:33)\n    at SafeSubscriber._next (node_modules/rxjs/dist/esm/internal/Subscriber.js:60:26)\n    at SafeSubscriber.next (node_modules/rxjs/dist/esm/internal/Subscriber.js:31:18)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 57,
+              "line": 15
+            },
+            "start": {
+              "column": 55,
+              "line": 15
+            }
+          }
+        },
+        {
+          "id": "36",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"Stryker was here!\"",
+          "statusReason": "Expected $.name = 'Stryker was here!' to equal ''.\n    at <Jasmine>\n    at Object.next (src/app/services/users.service.spec.ts:81:20)\n    at ConsumerObserver.next (node_modules/rxjs/dist/esm/internal/Subscriber.js:91:33)\n    at SafeSubscriber._next (node_modules/rxjs/dist/esm/internal/Subscriber.js:60:26)\n    at SafeSubscriber.next (node_modules/rxjs/dist/esm/internal/Subscriber.js:31:18)",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 4,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 67,
+              "line": 15
+            },
+            "start": {
+              "column": 65,
+              "line": 15
+            }
+          }
+        },
+        {
+          "id": "38",
+          "mutatorName": "StringLiteral",
+          "replacement": "``",
+          "statusReason": "Error: Expected one matching request for criteria \"Match URL: https://api.github.com/users\", found none. Requests received are: GET .\n    at HttpClientTestingBackend.expectOne (node_modules/@angular/common/fesm2022/http/testing.mjs:267:19)\n    at UserContext.apply (src/app/services/users.service.spec.ts:54:26)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>, Error: Expected no open requests, found 1: GET \n    at HttpClientTestingBackend.verify (node_modules/@angular/common/fesm2022/http/testing.mjs:295:19)\n    at UserContext.apply (src/app/services/users.service.spec.ts:40:14)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "2"
+          ],
+          "coveredBy": [
+            "2"
+          ],
+          "location": {
+            "end": {
+              "column": 40,
+              "line": 25
+            },
+            "start": {
+              "column": 17,
+              "line": 25
+            }
+          }
+        },
+        {
+          "id": "40",
+          "mutatorName": "StringLiteral",
+          "replacement": "``",
+          "statusReason": "Error: Expected one matching request for criteria \"Match URL: https://api.github.com/users/usuario1\", found none. Requests received are: GET .\n    at HttpClientTestingBackend.expectOne (node_modules/@angular/common/fesm2022/http/testing.mjs:267:19)\n    at UserContext.apply (src/app/services/users.service.spec.ts:65:26)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>, Error: Expected no open requests, found 1: GET \n    at HttpClientTestingBackend.verify (node_modules/@angular/common/fesm2022/http/testing.mjs:295:19)\n    at UserContext.apply (src/app/services/users.service.spec.ts:40:14)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:368:26)\n    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:273:39)\n    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:367:52)\n    at Zone.run (node_modules/zone.js/fesm2015/zone.js:129:43)\n    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:555:34)\n    at UserContext.<anonymous> (node_modules/zone.js/fesm2015/zone-testing.js:570:20)\n    at <Jasmine>",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "3"
+          ],
+          "coveredBy": [
+            "3",
+            "4"
+          ],
+          "location": {
+            "end": {
+              "column": 46,
+              "line": 30
+            },
+            "start": {
+              "column": 17,
+              "line": 30
+            }
+          }
+        }
+      ],
+      "source": "import { HttpClient } from '@angular/common/http';\r\nimport { Injectable } from '@angular/core';\r\nimport { Observable, catchError, of } from 'rxjs';\r\n\r\nimport { UserInterface } from '../interfaces/user.interface';\r\n\r\n/**\r\n * UsersService\r\n */\r\n@Injectable({\r\n  providedIn: 'root',\r\n})\r\nexport class UsersService {\r\n  private baseUrl: string = 'https://api.github.com';\r\n  private emptyUser: UserInterface = { login: '', id: '', name: '' };\r\n\r\n  /**\r\n   * Class constructor\r\n   *\r\n   * @param {HttpClient} http the http client service\r\n   */\r\n  constructor(private http: HttpClient) {}\r\n\r\n  getUsers(): Observable<UserInterface[]> {\r\n    const url = `${this.baseUrl}/users`;\r\n    return this.http.get<UserInterface[]>(url);\r\n  }\r\n\r\n  getUserById(id: string): Observable<UserInterface> {\r\n    const url = `${this.baseUrl}/users/${id}`;\r\n    return this.http\r\n      .get<UserInterface>(url)\r\n      .pipe(catchError(() => of(this.emptyUser)));\r\n  }\r\n}\r\n"
+    }
+  },
+  "schemaVersion": "1.0",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "testFiles": {
+    "": {
+      "tests": [
+        {
+          "id": "0",
+          "name": "AppComponent should create the app"
+        },
+        {
+          "id": "1",
+          "name": "UsersService should be created"
+        },
+        {
+          "id": "2",
+          "name": "UsersService getUsers should return a list of users"
+        },
+        {
+          "id": "3",
+          "name": "UsersService getUserById should call http service with users/login url"
+        },
+        {
+          "id": "4",
+          "name": "UsersService getUserById should catchError for wrong request"
+        },
+        {
+          "id": "5",
+          "name": "UserDetailsPage.Component should create"
+        },
+        {
+          "id": "6",
+          "name": "UserDetailsPage.Component ngOnInit should get the user without data"
+        },
+        {
+          "id": "7",
+          "name": "UserDetailsPage.Component ngOnInit should get the user with id=usuario1"
+        },
+        {
+          "id": "8",
+          "name": "UserDetailsPage.Component ngOnInit should not change user=null if id is not defined"
+        },
+        {
+          "id": "9",
+          "name": "UsersPageComponent should create"
+        },
+        {
+          "id": "10",
+          "name": "UsersPageComponent trackByFn should return login value"
+        },
+        {
+          "id": "11",
+          "name": "UsersPageComponent navigateTo should call routing service with correct params"
+        },
+        {
+          "id": "12",
+          "name": "UsersPageComponent ngOnInit should set usersList with service response"
+        }
+      ]
+    }
+  },
+  "projectRoot": "/home/diego/Projects/mutant-app",
+  "config": {
+    "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+    "_comment": "This config was generated using 'stryker init'. Please see the guide for more information: https://stryker-mutator.io/docs/stryker-js/guides/angular",
+    "mutate": [
+      "src/app/**/*.ts",
+      "!src/**/*.spec.ts",
+      "!src/**/*.module.ts",
+      "!src/*.ts",
+      "!src/environments/*.ts"
+    ],
+    "testRunner": "karma",
+    "karma": {
+      "configFile": "karma.conf.js",
+      "projectType": "angular-cli",
+      "config": {
+        "browsers": [
+          "ChromeHeadless"
+        ]
+      }
+    },
+    "reporters": [
+      "progress",
+      "clear-text",
+      "html"
+    ],
+    "concurrency": 2,
+    "concurrency_comment": "Recommended to use about half of your available cores when running stryker with angular",
+    "coverageAnalysis": "perTest",
+    "checkers": [
+      "typescript"
+    ],
+    "tsconfigFile": "tsconfig.json",
+    "typescriptChecker": {
+      "prioritizePerformanceOverAccuracy": true
+    },
+    "incremental": true,
+    "allowConsoleColors": true,
+    "checkerNodeArgs": [],
+    "commandRunner": {
+      "command": "npm test"
+    },
+    "clearTextReporter": {
+      "allowColor": true,
+      "allowEmojis": false,
+      "logTests": true,
+      "maxTestsToLog": 3
+    },
+    "dashboard": {
+      "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+      "reportType": "full"
+    },
+    "dryRunOnly": false,
+    "eventReporter": {
+      "baseDir": "reports/mutation/events"
+    },
+    "ignorePatterns": [],
+    "ignoreStatic": false,
+    "incrementalFile": "reports/stryker-incremental.json",
+    "force": false,
+    "fileLogLevel": "off",
+    "inPlace": false,
+    "logLevel": "info",
+    "maxConcurrentTestRunners": 9007199254740991,
+    "maxTestRunnerReuse": 0,
+    "mutator": {
+      "plugins": null,
+      "excludedMutations": []
+    },
+    "plugins": [
+      "@stryker-mutator/*"
+    ],
+    "appendPlugins": [],
+    "htmlReporter": {
+      "fileName": "reports/mutation/mutation.html"
+    },
+    "jsonReporter": {
+      "fileName": "reports/mutation/mutation.json"
+    },
+    "disableTypeChecks": "{test,src,lib}/**/*.{js,ts,jsx,tsx,html,vue}",
+    "symlinkNodeModules": true,
+    "tempDirName": ".stryker-tmp",
+    "cleanTempDir": true,
+    "testRunnerNodeArgs": [],
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": null
+    },
+    "timeoutFactor": 1.5,
+    "timeoutMS": 5000,
+    "dryRunTimeoutMinutes": 5,
+    "warnings": true,
+    "disableBail": false
+  },
+  "framework": {
+    "name": "StrykerJS",
+    "version": "6.4.2",
+    "branding": {
+      "homepageUrl": "https://stryker-mutator.io",
+      "imageUrl": "data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1458 1458' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cpath fill='none' d='M0 0h1458v1458H0z'/%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h1458v1458H0z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M1458 729c0 402.655-326.345 729-729 729S0 1131.655 0 729C0 326.445 326.345 0 729 0s729 326.345 729 729' fill='%23e74c3c' fill-rule='nonzero'/%3E%3Cpath d='M778.349 1456.15L576.6 1254.401l233-105 85-78.668v-64.332l-257-257-44-187-50-208 251.806-82.793L1076.6 389.401l380.14 379.15c-19.681 367.728-311.914 663.049-678.391 687.599z' fill-opacity='.3'/%3E%3Cpath d='M753.4 329.503c41.79 0 74.579 7.83 97.925 25.444 23.571 18.015 41.69 43.956 55.167 77.097l11.662 28.679 165.733-58.183-14.137-32.13c-26.688-60.655-64.896-108.61-114.191-144.011-49.329-35.423-117.458-54.302-204.859-54.302-50.78 0-95.646 7.376-134.767 21.542-40.093 14.671-74.09 34.79-102.239 60.259-28.84 26.207-50.646 57.06-65.496 92.701-14.718 35.052-22.101 72.538-22.101 112.401 0 72.536 20.667 133.294 61.165 182.704 38.624 47.255 98.346 88.037 179.861 121.291 42.257 17.475 78.715 33.125 109.227 46.994 27.193 12.361 49.294 26.124 66.157 41.751 15.309 14.186 26.497 30.584 33.63 49.258 7.721 20.214 11.16 45.69 11.16 76.402 0 28.021-4.251 51.787-13.591 71.219-8.832 18.374-20.171 33.178-34.523 44.219-14.787 11.374-31.193 19.591-49.393 24.466-19.68 5.359-39.14 7.993-58.69 7.993-29.359 0-54.387-3.407-75.182-10.747-20.112-7.013-37.144-16.144-51.259-27.486-13.618-11.009-24.971-23.766-33.744-38.279-9.64-15.8-17.272-31.924-23.032-48.408l-10.965-31.376-161.669 60.585 10.734 30.124c10.191 28.601 24.197 56.228 42.059 82.748 18.208 27.144 41.322 51.369 69.525 72.745 27.695 21.075 60.904 38.218 99.481 51.041 37.777 12.664 82.004 19.159 132.552 19.159 49.998 0 95.818-8.321 137.611-24.622 42.228-16.471 78.436-38.992 108.835-67.291 30.719-28.597 54.631-62.103 71.834-100.642 17.263-38.56 25.923-79.392 25.923-122.248 0-54.339-8.368-100.37-24.208-138.32-16.29-38.759-38.252-71.661-65.948-98.797-26.965-26.418-58.269-48.835-93.858-67.175-33.655-17.241-69.196-33.11-106.593-47.533-35.934-13.429-65.822-26.601-89.948-39.525-22.153-11.868-40.009-24.21-53.547-37.309-11.429-11.13-19.83-23.678-24.718-37.664-5.413-15.49-7.98-33.423-7.98-53.577 0-40.883 11.293-71.522 37.086-90.539 28.443-20.825 64.985-30.658 109.311-30.658z' fill='%23f1c40f' fill-rule='nonzero'/%3E%3Cpath d='M720 0h18v113h-18zM1458 738v-18h-113v18h113zM720 1345h18v113h-18zM113 738v-18H0v18h113z'/%3E%3C/g%3E%3C/svg%3E"
+    },
+    "dependencies": {
+      "@stryker-mutator/karma-runner": "6.4.2",
+      "@stryker-mutator/typescript-checker": "6.4.2",
+      "karma": "6.4.2",
+      "karma-chrome-launcher": "3.2.0",
+      "karma-jasmine": "5.1.0",
+      "jasmine-core": "4.6.0",
+      "typescript": "5.1.6",
+      "@angular/cli": "16.2.0",
+      "webpack": "5.88.2"
+    }
+  }
+}

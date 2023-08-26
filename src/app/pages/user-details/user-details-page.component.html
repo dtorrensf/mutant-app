@@ -1,0 +1,14 @@
+<div class="col-6 container justify-content-center">
+  <h3 *ngIf="isNotFound">Usuario no encontrado</h3>
+
+  <h3 *ngIf="loading">Cargando ...</h3>
+
+  <div *ngIf="user">
+    <p>
+      {{ user.name }}
+    </p>
+    <p>
+      {{ user.login }}
+    </p>
+  </div>
+</div>
