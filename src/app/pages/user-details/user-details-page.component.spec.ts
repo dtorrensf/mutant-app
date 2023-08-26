@@ -112,17 +112,17 @@ describe('UserDetailsPage.Component', () => {
     expect(serviceSpy).not.toHaveBeenCalled();
   });
 
-  // it('isNotFound should return false if is loading', () => {
-  //   component.loading = true;
-  //   fixture.detectChanges();
-  //   expect(component.isNotFound).toBeFalse();
-  // });
+  it('isNotFound should return false if is loading', () => {
+    component.loading = true;
+    fixture.detectChanges();
+    expect(component.isNotFound).toBeFalse();
+  });
 
-  // it('isNotFound should return true if is not loading and no user', () => {
-  //   component.user = null;
-  //   fixture.detectChanges();
-  //   expect(component.isNotFound).toBeTrue();
-  // });
+  it('isNotFound should return true if is not loading and no user', () => {
+    component.user = null;
+    fixture.detectChanges();
+    expect(component.isNotFound).toBeTrue();
+  });
 
   afterEach(() => {
     fixture.destroy();
